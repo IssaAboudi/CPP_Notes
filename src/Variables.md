@@ -20,8 +20,9 @@ You can name your variables whatever you would like.
 
 *you are encouraged to name variables according to what they are used
 for. If you make a variable to hold the user's name, a good idea for
-a name might be `name`. A more confusing name would be `x` or `var`
+a name might be `name`. A more confusing name would be `x` or `var` 
 since you cannot tell what they are on first glance*
+
 ---
 ### Literals
 Programming languages allow you to "hardcode" (set values/text from
