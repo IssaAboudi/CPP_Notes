@@ -1,4 +1,4 @@
-# Variables, Literals & Printing out in C++
+# Text, Numbers, and Variables in C++
 There are several types of variables. 
 Most of these variables exist across most coding languages
 (Java, Python, C, C++, C# etc...) - If you learn them in one 
