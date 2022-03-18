@@ -106,6 +106,34 @@ In an academic environment, you might not care about or need that much precision
 but if you were working at NASA, where they calculate with long decimal places
 (think the first 20 decimals of ![pi](https://latex.codecogs.com/svg.image?\pi)!)
 
-##
+### Text in C++
 
-## [[back to main]](HomePage.md)
+There are two variables that deal with text directly. The first one we'll talk
+about is extremely useful and you will probably work with this very often.
+
+`strings` are variables that contain words and sentences. You can declare a 
+string variable just as you did integers, doubles and floats:
+
+```c++
+string name = "Issa"; //declared a string and initialized it to "Issa"
+string sentence = "I am having a great day"; //strings can contain sentences
+```
+
+Lastly, lets talk a little bit about "characters" or`char`s as they are known in
+C++. `string`s and `char`s are really interesting and we will explore them in more
+depth in the future.
+
+As normal, we declare chars and initialize them just as any other variable:
+```c++
+char letter = 'a'; //declare and initialized a char to the lowercase letter "a"
+```
+There are a couple things to notice about the first line of code:
+- Firstly, I used ' ' (single quotes) rather than " " (double quotes). This is
+because `char`s only store single letters, whereas words/sentences (`strings`)
+use " " (double quotes).
+- I specifically said "to the lowercase letter a". Capitalization matters in
+`char`s and by extension `string`s. We will talk more in depth about how the
+computer interacts with characters.
+
+---
+# [back to main](HomePage.md)
