@@ -6,37 +6,24 @@ language they mostly translate to other languages.
 
 ---
 ### What are variables?
-Variables are objects that contain values (numbers, text, etc) 
-in programs. They let the programmer keep track of certain values -
+Variables are "containers", much like boxes in the real world hold items.
+Except in this case, they contain values (numbers, text, etc) in programs.
+Variables let the programmer keep track of certain values -
 sometimes unknown values to the programmer, such as user input.
 
-to declare a variable, you'll generally follow this format:
+To **declare** a variable, you'll generally follow this format:
 
     <data type> [name];
-    
-Data types tell the compiler what kind of variable you want to
-declare. The name is how you reference the variable when you code.
+**Data types** tell the compiler what kind of variable you want to
+declare. The **name** is how you reference the variable when you code.
 You can name your variables whatever you would like. 
 
 *you are encouraged to name variables according to what they are used
 for. If you make a variable to hold the user's name, a good idea for
 a name might be `name`. A more confusing name would be `x` or `var` 
 since you cannot tell what they are on first glance*
-
 ---
-### Literals
-Programming languages allow you to "hardcode" (set values/text from
-the program) without the use of variables. These are known as `literals`
-
-You can print literals and variables to the screen similarly. Also
-when you `assign` values to variables using the `assignment operator (=)`,
-you use literals to tell the computer what values they should store
-
-We'll talk about printing data to the screen soon
-
----
-
-# Data Types
+# The different data types
 
 ## Lets start with numbers
 
@@ -105,7 +92,8 @@ Program Ending
 
 In an academic environment, you might not care about or need that much precision
 but if you were working at NASA, where they calculate with long decimal places
-(think the first 20 decimals of ![pi](https://latex.codecogs.com/svg.image?\pi)!)
+(think the first 20 decimals of ![pi](https://latex.codecogs.com/svg.image?\pi)!),
+you'll want that extra precision.
 
 ### Text in C++
 
@@ -137,4 +125,4 @@ use " " (double quotes).
 computer interacts with characters.
 
 ---
-# [back to main](HomePage.md)
+# [Go back to the home page](HomePage.md)

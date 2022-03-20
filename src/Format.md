@@ -1,13 +1,5 @@
 # General Format of C++ Code
 
-## what I am going to go over
-- `#include`
-- `std::`
-- `using namespace std;`
-- `cout << endl`
-- `main function`
-- `general formatting of code`
-
 Source files can be overwhelming to start working in. This section is 
 dedicated to clarifying and giving more context to the various keywords
 and formatting features of the language.
@@ -27,35 +19,77 @@ Running this code as is, gives us the result:
 ```
 Hello World
 ```
+### general understanding of what the program does
 This is a hello world program. As you can see, it prints "Hello World" to
 the console. This is a pretty typical first project among new programmers.
 If you are already familiar with code, this is probably nothing new. Lets
 break down the code itself line by line, starting with the `#include`
 ---
+## Lets break down what's happening on each line
 
 ```c++
 #include <iostream>
 ```
-Before we can talk about the # (hash/pound) include, we need to have an idea
-of what iostream is. `iostream` is a really large file filled with code that
-allow us to take in input and print out data to the screen. `std::cout` for
-example is defined in iostream and if we do not have this line, we cannot use
-cout.
+First off, what in the heck is `iostream`? Basically, it is just a really large 
+file filled with code for inputting and outputting stuff. If you remove this 
+line, you'll probably get an error on the line containing `std::cout`.
 
-`#include` is a preprocessor directive. When the compiler begins
+`#include` is a **preprocessor directive**. When the compiler begins
 compiling, any lines with `#` are looked at and run first (before actual
 code). `#include` is a essentially a big copy and paste instruction. When
-we #include iostream, what we are doing is copying the contents of the iostream
-file and pasting it where the #include directive is in our current file.
+we `#include iostream`, what we are doing is copying the contents of the 
+iostream file and pasting it where the #include directive is in our current 
+file.
 
-We will talk more about files later - and learn to use `#include` with our own
-files.
+We will talk more about files - and learn to use `#include` with our own
+files <!-- in  [Header Files](./HeaderFiles.md) -->.
 ---
 ```c++
 int main () {
-    
+    //code goes here
     return 0;
 }
 ```
-This is what is known as your main function. This becomes our main application
-and when called by the operating system, runs our code.
+This is what is known as your main function. It is your computer's entrypoint
+into your program. Most variables and instructions will be written in this 
+function.`return 0;` is our program's way of telling us that the program ran
+successfully.
+
+We'll go in much more detail about functions - their structure, how to make our
+own, what the `return` keyword does - in the future. For now, make sure your 
+main function looks identical to what is shown above.
+---
+```c++
+std::cout << "Hello World" << std::endl;
+```
+This line of code is what prints out "Hello World" to the console. We will cover
+cout in more detail later <!-- in [Input-Output](./InputOutput.md) -->. I would
+recommend playing around with cout and try to apply your knowledge of 
+[variables](./Variables.md)
+---
+### Formatting
+The compiler does not read whitespace (spacing and tabbing, etc.) in the
+source (cpp) file. This means you could technically write code like:
+```c++
+#include <iostream> int main(){ std::cout << "Hello World" << std::endl; return 0;}
+```
+I would **strongly** discourage coding in one line like so. This is incredibly hard
+to read and as your files get longer (it is typical to have hundreds of lines of code)
+you will have a hard time navigating your code.
+
+You also do not want code like this:
+```c++
+#include <iostream>
+int main() {
+std::cout << "Hello World" << std::endl;
+return 0;
+}
+```
+It has become a standard among programmers to indent code within curly braces
+(`{` `}`) and while this code is much better than the previous block, it will
+be difficult to read, especially as the source file grows in size.
+
+*Get in the habit of formatting cleanly early on in your coding journey*
+
+---
+# [Go back to the home page](HomePage.md)
