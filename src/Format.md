@@ -20,10 +20,12 @@ Running this code as is, gives us the result:
 Hello World
 ```
 ### general understanding of what the program does
+
 This is a hello world program. As you can see, it prints "Hello World" to
 the console. This is a pretty typical first project among new programmers.
 If you are already familiar with code, this is probably nothing new. Lets
 break down the code itself line by line, starting with the `#include`
+
 ---
 ## Lets break down what's happening on each line
 
