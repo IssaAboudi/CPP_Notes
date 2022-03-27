@@ -47,7 +47,7 @@ By initializing, we ensure that we know exactly what x is when the program run
 and we avoid any funky behavior such as the declared variable x having some value
 other than what we expect it to have.
 
-the last thing to mention about integers is that they can be signed (regular)
+The last thing to mention about integers is that they can be signed (regular)
 or `unsigned`. unsigned means that the compiler will throw you a warning if you
 try to assign a negative value into the variable.
 ```c++
@@ -55,7 +55,7 @@ unsigned int z = 1; //declares and initializes an unsigned integer z to 1.
 z = -1; 
 
 ```
-if we attempt to print out z to the console, we will get a really large number:
+If we attempt to print out z to the console, we will get a really large number:
 4294967295. This is the largest number we can store in an unsigned integer before
 it "overflows" - we will talk more about this later.
 
@@ -63,12 +63,12 @@ it "overflows" - we will talk more about this later.
 ### Next lets talk about `float`s and `double`s
 Floats and doubles contain decimal values (both positive and negative). You declare
 them very similarly to how you declare integers. My general rule of always initializing
-your variables when you declare them comes into play here:
+your variables when you declare them comes into play here too:
 ```c++
 float x = 2.5; //declare and initialize a float to the value 2.5;
 double y = 2.5; //declare and initialize a double to the value 2.5;
 ```
-the above two lines look identical. So why are there two? The answer comes down to
+The above two lines look identical. So why are there two? The answer comes down to
 precision. A float is about half the size of a double, meaning that the float can't
 store as large of numbers as a double can. To prove this to you, I will run the following:
 ```c++
@@ -123,6 +123,9 @@ use " " (double quotes).
 - I specifically said "to the lowercase letter a". Capitalization matters in
 `char`s and by extension `string`s. We will talk more in depth about how the
 computer interacts with characters.
+
+I strongly encourage playing around with these different data types and getting
+used to their differences. Try storing numbers in a `char` as a challenge!
 
 ---
 # [Go back to the home page](HomePage.md)

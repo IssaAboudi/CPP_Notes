@@ -3,6 +3,8 @@
 ### talk about
 - opening a file
 - reading a file
-  - cin, getline, read
+  - `>>`, getline , read
+- writing to a file
+  - `<<`, write
 - looping through a file
-- fail
+- fail, eof
