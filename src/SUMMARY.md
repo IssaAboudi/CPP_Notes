@@ -6,4 +6,5 @@
 
 # Topics:
 - [Variables](./Variables.md)
-- [InputOutput](./InputOutput.md)
+- [Input Output](./InputOutput.md)
+- [Conditionals](./Conditionals.md)

@@ -5,6 +5,7 @@ Most of these variables exist across most coding languages
 language they mostly translate to other languages.
 
 ---
+
 ### What are variables?
 Variables are "containers", much like boxes in the real world hold items.
 Except in this case, they contain values (numbers, text, etc) in programs.
@@ -22,7 +23,9 @@ You can name your variables whatever you would like.
 for. If you make a variable to hold the user's name, a good idea for
 a name might be `name`. A more confusing name would be `x` or `var` 
 since you cannot tell what they are on first glance*
+
 ---
+
 # The different data types
 
 ## Lets start with numbers
@@ -43,6 +46,7 @@ To initialize, simply assign it a starting value. See below:*
 ```c++
 int y = 0; //declared an integer y and initialized it to 0
 ```
+
 By initializing, we ensure that we know exactly what x is when the program run
 and we avoid any funky behavior such as the declared variable x having some value
 other than what we expect it to have.
@@ -50,11 +54,13 @@ other than what we expect it to have.
 The last thing to mention about integers is that they can be signed (regular)
 or `unsigned`. unsigned means that the compiler will throw you a warning if you
 try to assign a negative value into the variable.
+
 ```c++
 unsigned int z = 1; //declares and initializes an unsigned integer z to 1.
 z = -1; 
 
 ```
+
 If we attempt to print out z to the console, we will get a really large number:
 4294967295. This is the largest number we can store in an unsigned integer before
 it "overflows" - we will talk more about this later.
@@ -71,6 +77,7 @@ double y = 2.5; //declare and initialize a double to the value 2.5;
 The above two lines look identical. So why are there two? The answer comes down to
 precision. A float is about half the size of a double, meaning that the float can't
 store as large of numbers as a double can. To prove this to you, I will run the following:
+
 ```c++
 #include <iostream>
 #include <limits>
@@ -83,7 +90,9 @@ int main() {
     return 0;
 }
 ```
+
 the output will look like:
+
 ```
 float max: 3.40282e+38
 double max: 1.79769e+308
@@ -113,9 +122,11 @@ C++. `string`s and `char`s are really interesting and we will explore them in mo
 depth in the future.
 
 As normal, we declare chars and initialize them just as any other variable:
+
 ```c++
 char letter = 'a'; //declare and initialized a char to the lowercase letter "a"
 ```
+
 There are a couple things to notice about the first line of code:
 - Firstly, I used ' ' (single quotes) rather than " " (double quotes). This is
 because `char`s only store single letters, whereas words/sentences (`strings`)
@@ -128,4 +139,5 @@ I strongly encourage playing around with these different data types and getting
 used to their differences. Try storing numbers in a `char` as a challenge!
 
 ---
+
 # [Go back to the home page](HomePage.md)

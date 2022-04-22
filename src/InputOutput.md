@@ -19,13 +19,17 @@ In any case, you will need to understand how to use `cout`.
 of data. You'll often see it accompanied with **streaming operators** (`<<`). 
 The way you use the `cout` object is by "streaming" variables and/or raw values
 to it, like so:
+
 ```c++
 std::cout << "I am text";
 ```
+
 The output looks something like:
+
 ```
 I am text
 ```
+
 The best way to think about `cout` is to think of it as a location. By using
 the streaming operator (<<), we send the raw text "I am text" to cout. Where exactly
 is cout?
@@ -107,6 +111,7 @@ more later  <!-- when we talk about [files](./Files.md) -->.
 _As we are starting off in C++, this difference isn't going to be particularly 
 meaningful but it is still a good idea to have some idea of what is happening 
 under the hood._
+
 ---
 
 ## Escape Characters
@@ -129,9 +134,10 @@ std::cout << "Let us print a double quote " "; //will not work
 
 **I challenge you to try this code above in your IDE.** 
 
-You should get some sort
-of syntax error. It should work when you escape the double quote `"` by
-preceding it with a `\`:
+You should get some sort of syntax error. It should work when you escape
+the double quote `"` by preceding it with a `\ `:
+
+
 ```c++
 std::cout << "Let us print a double quote \" "; //should work
 ```
@@ -141,6 +147,7 @@ our programs look and feel intuitive on the user's end, even if it makes our
 code look weirder on our end.
 
 ---
+
 
 ## User Input
 
@@ -180,6 +187,7 @@ show where the data is coming from and where it is being streamed to._
 
 A common problem people have with cin comes from not clearing the cin buffer.
 Copy and paste the following code into your IDE:
+
 ```c++
 #include <iostream>
 int main(){
@@ -191,17 +199,21 @@ int main(){
     std::cin >> input;
 }
 ```
+
 Most likely, you'll notice you can enter a number the first time but it skips
 over for the second `cin` field. This is because there is still some extra data
 in the cin buffer.
 
 To overcome this, we can use the following two functions:`
 
-cin.clear()` and`cin.ignore(INT_MAX, '\n')`. 
+- `cin.clear()`
+- `cin.ignore(INT_MAX, '\n')` 
 
 `cin.clear()` empties anything and everything left over in the buffer. 
 `cin.ignore(INT_MAX, '\n')` ignores any character in the buffer until 
-either it reaches the end of the buffer, or the '\n' character in the buffer.
+either it reaches the end of the buffer, or the `'\n'` character in the buffer.
+
+
 ```c++
 #include <iostream>
 #include <climits>
@@ -218,6 +230,7 @@ int main(){
     std::cin.ignore(INT_MAX,'\n');
 }
 ```
+
 
 I would **strongly** encourage always cin.clear() and cin.ignore() after you
 take in user input using `cin`.
