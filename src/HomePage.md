@@ -6,6 +6,7 @@
 - <a href="http://github.com/IssaAboudi/" target="_blank">Github</a>
 - <a href="https://www.linkedin.com/in/matthew-issa-aboudi-54053a208" target="_blank">LinkedIn</a>
 - <a href="https://www.youtube.com/channel/UCAEvG6K64MbO79nDRrp_9zw" target="_blank">Youtube</a>
+- <a href="https://discord.gg/48de4N8pdk" target="_blank">Discord</a>
 
 ---
 
@@ -20,8 +21,3 @@ incredibly well done.
 - [CPlusPlus](https://www.cplusplus.com/) is a really handy reference page that
 tells you how functions and pieces of code native to C++ work. Often times I
 will link or refer you to their page to better explain things.
-
-
-### Get Started:
-- [Variables](Variables.md)
-- [Input/Output](./InputOutput.md)

@@ -49,12 +49,14 @@ We can evaluate if one is greater than the other, or if they are equal to each o
 the following relational operators:
 
 ---
+
 - `>` - Greater Than
 - `<` - Less Than
 - `>=` - Greater Than or Equal to
 - `<=` - Less Than or Equal to
 - `==` - Equal to (not to be confused with the assignment operator `=`)
 - `!=` - Not Equal to
+
 ---
 
 Each of these operators gives its result in a binary (boolean) format. Either `True` or `False`
@@ -154,7 +156,9 @@ evaluate true.
 condition to evaluate as true
 
 We can explore this in a Truth Table:
-<img src="https://i.imgur.com/tb4b2H6.png"/>
+
+<img src="https://i.imgur.com/bmRiV02.png" width="300"/>
+<img src="https://i.imgur.com/6BfPBKP.png" width="290"/>
 
 In an `AND` operation, both A and B have to be 1 (`True`) to result in a 1 (All subconditions must
 be true in order for the whole condition to be true). However, in the `OR` operation, the
@@ -182,6 +186,8 @@ if(!value) { //the code below will only execute when value is "not false" aka "t
 
 The `!` operator also works with assignment - You can assign the `!` of a boolean
 variable.
+
+<img src="https://i.imgur.com/r2z1W0a.png" width="290"/>
 
 Take a look at the following code and predict what the output is:
 

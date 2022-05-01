@@ -1,10 +1,14 @@
-# CPP NOTES
+# Programming Notes
 
 [Home](./HomePage.md)
 
 [CPP Formatting](./Format.md)
 
-# Topics:
+# CPP Topics:
 - [Variables](./Variables.md)
 - [Input Output](./InputOutput.md)
 - [Conditionals](./Conditionals.md)
+- [Functions](./Functions.md)
+
+# ASM Topics:
+- [Registers](../asm/Registers.md)
